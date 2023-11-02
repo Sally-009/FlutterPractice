@@ -46,7 +46,6 @@ class _LoginState extends State<Login> {
               obscureText: true, // パスワードを隠す
             ),
             const SizedBox(height: 20),
-
           ],
         ),
       ),
