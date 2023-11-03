@@ -13,9 +13,11 @@ class _LoginState extends State<Login> {
   String _uname = '';
   String _psw = '';
 
-  // void _handleLogin() {
-  // // ユーザー名とパスワードのバリデーションやログイン処理を行う
-  // }
+  void _handleLogin() {
+    // ユーザー名とパスワードのバリデーションやログイン処理を行う
+
+    // 成功したら次のページに行く
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -51,18 +53,12 @@ class _LoginState extends State<Login> {
             // Submit
             ElevatedButton(
               // login関数の中身を書けば赤線解決すると思う
-              onPressed: login(_uname, _psw),
+              onPressed: _handleLogin(),
               child: const Text("Done"),
             ),
           ],
         ),
       ),
     );
-  }
-
-  // ログイン画面でDoneを押した時の処理(フォームで入力されたunameとpswが引数)
-  void login(String unamein, String pswin) {
-    // ユーザーデータと照合
-    // 有効な結果なら次のページへ行く
   }
 }
